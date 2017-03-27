@@ -121,13 +121,15 @@ updateWeights dict line ex step m = do
                          Just v -> return $ VS.snoc vec v
                          Nothing-> return $ VS.snoc vec 0) VS.empty wek
   let grad       = gradRMSE weights inp ex m
-      newWeights = weights - (VS.map (nanCheck.(step *)) grad)
+      newWeights = weights - (VS.map (clip.nanCheck.(step *)) grad)
       newError   = rmse newWeights inp ex
   foldM_ (\acc x -> do
             let newW = VS.head acc
             unless (newW == 0) $ H.insert dict x newW
             return $ VS.tail acc) newWeights words
   return $ nanCheck newError
+  where
+    clip x = max x 3
 
 checkError :: Probs -> [T.Text] -> Double -> IO Double
 checkError dict line ex = do
