@@ -1,0 +1,1368 @@
+
+==================== FINAL INTERFACE ====================
+2017-03-27 18:11:27.611548166 UTC
+
+interface LinearRegression-0.1.0.0-Hh3n6xV11XeLxMGLEKIE24:Lib 8002
+  interface hash: cbf154b7571222194a117dfaacdf17b7
+  ABI hash: 4347e9025cfbaaf5917ed9f9c76b0326
+  export-list hash: 502245ab3cd8e91ad66f0050af8da0ba
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d7f2e1eac0f1d721f85caefdb9f73299
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.chars
+  Lib.checkError
+  Lib.counts
+  Lib.delta
+  Lib.el
+  Lib.eval
+  Lib.evalLine
+  Lib.gradRMSE
+  Lib.linear
+  Lib.loadCorpus
+  Lib.nanCheck
+  Lib.preprocess
+  Lib.readProbs
+  Lib.readWords
+  Lib.rmse
+  Lib.saveProbs
+  Lib.someFunc
+  Lib.st
+  Lib.train
+  Lib.updateWeights
+  Lib.Probs
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4
+                      hashtables-1.2.1.0@hashtables-1.2.1.0-Gn8SuLgl5kj6IL9Wq6eBAx
+                      hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O
+                      integer-gmp-1.0.0.1
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      process-1.4.3.0@process-1.4.3.0
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      split-0.2.3.1@split-0.2.3.1-FWyXC6nhV0H3AfM8IzrEFk
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unix-2.7.2.1@unix-2.7.2.1
+                      vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4:Data.Hashable.Generic
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.CG
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Element
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Util
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Vector
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Numeric.Matrix
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Numeric.Vector
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Compose base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Devel
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Matrix
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Modular
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Numeric
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Float 33e2b9ffe427edd6a5c2fd6a3b26703c
+import  -/  base-4.9.1.0:GHC.IO.Handle ba98a5b34d78cbf48b41fe58a3735c69
+import  -/  base-4.9.1.0:GHC.IO.Handle.FD dbf0d0d4f42ab1465129a88ccf7880ff
+import  -/  base-4.9.1.0:GHC.IO.Handle.Text b65719f3b262b071ab1aabeb72fc9d8b
+import  -/  base-4.9.1.0:GHC.IO.Handle.Types 17aa0e2ab137800e3a31992d780c071f
+import  -/  base-4.9.1.0:GHC.IO.IOMode 2f5782f93b12a0d860d6d661b9fb405c
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
+import  -/  base-4.9.1.0:Text.Read 75c59863e882ebaec4532e9465e2ee9b
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  hashtables-1.2.1.0@hashtables-1.2.1.0-Gn8SuLgl5kj6IL9Wq6eBAx:Data.HashTable.IO 10ea8c623f1bbd778fe074c14cc80547
+import  -/  hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Container d21ae30f32a8d37610761ed26e680742
+import  -/  hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Numeric.LinearAlgebra 1f8778725e1cab8330021567e537fa68
+import  -/  process-1.4.3.0@process-1.4.3.0:System.Process 1ee59b956b7cad68338d3f6ab3e772ed
+import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random 08e50ea8c400b4b56120dee22f012f01
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text 9ba4693a108b74a0b1eb8f7d38f1abee
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.IO d1ddb4c76b86ec795cc5ee286ec187f5
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Internal a2f6f66c5bb1247458d9fa25257ab188
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show 638b4149d86790151d6d4eeca215be94
+import  -/  vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable 6efee64e1486b549434fd0e1352e7839
+36dd4ec132b8dbc66853c64b8215eb53
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+3eccd0c60b22c82b5901984417297ac3
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+bd6f6e1c082a1b59724f1c0d25f80f02
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "LinearRegression-0.1.0.0-Hh3n6xV11XeLxMGLEKIE24"#) -}
+0a2fad491a453bd2e75523c578bf005c
+  $wcheckError ::
+    GHC.Prim.MutVar#
+      (Control.Monad.Primitive.PrimState GHC.Types.IO)
+      (Data.HashTable.ST.Cuckoo.HashTable_
+         (Control.Monad.Primitive.PrimState GHC.Types.IO)
+         Data.Text.Internal.Text
+         GHC.Types.Double)
+    -> [Data.Text.Internal.Text]
+    -> GHC.Prim.Double#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><L,U>, Inline: [0] -}
+95840e46f38f388d24ab1e4d250c8939
+  $wel ::
+    GHC.Types.Char
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U(U)><L,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Char)
+                   (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#) ->
+                 let {
+                   end :: GHC.Prim.Int# = GHC.Prim.+# ww1 ww2
+                 } in
+                 letrec {
+                   $wloop_any :: GHC.Prim.Int# -> GHC.Types.Bool
+                     {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                   = \ (ww3 :: GHC.Prim.Int#) ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.>=# ww3 end) of wild1 {
+                       GHC.Types.False
+                       -> case GHC.Prim.indexWord16Array# ww ww3 of r# { DEFAULT ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.geWord# r# 55296##) of wild2 {
+                            GHC.Types.False
+                            -> case w of wild { GHC.Types.C# x ->
+                               case GHC.Prim.tagToEnum#
+                                      @ GHC.Types.Bool
+                                      (GHC.Prim.eqChar#
+                                         x
+                                         (GHC.Prim.chr# (GHC.Prim.word2Int# r#))) of wild4 {
+                                 GHC.Types.False -> $wloop_any (GHC.Prim.+# ww3 1#)
+                                 GHC.Types.True -> GHC.Types.True } }
+                            GHC.Types.True
+                            -> case GHC.Prim.tagToEnum#
+                                      @ GHC.Types.Bool
+                                      (GHC.Prim.leWord# r# 56319##) of wild3 {
+                                 GHC.Types.False
+                                 -> case w of wild { GHC.Types.C# x ->
+                                    case GHC.Prim.tagToEnum#
+                                           @ GHC.Types.Bool
+                                           (GHC.Prim.eqChar#
+                                              x
+                                              (GHC.Prim.chr# (GHC.Prim.word2Int# r#))) of wild4 {
+                                      GHC.Types.False -> $wloop_any (GHC.Prim.+# ww3 1#)
+                                      GHC.Types.True -> GHC.Types.True } }
+                                 GHC.Types.True
+                                 -> case w of wild { GHC.Types.C# x ->
+                                    case GHC.Prim.indexWord16Array#
+                                           ww
+                                           (GHC.Prim.+# ww3 1#) of r#1 { DEFAULT ->
+                                    case GHC.Prim.tagToEnum#
+                                           @ GHC.Types.Bool
+                                           (GHC.Prim.eqChar#
+                                              x
+                                              (GHC.Prim.chr#
+                                                 (GHC.Prim.+#
+                                                    (GHC.Prim.+#
+                                                       (GHC.Prim.uncheckedIShiftL#
+                                                          (GHC.Prim.-#
+                                                             (GHC.Prim.word2Int# r#)
+                                                             55296#)
+                                                          10#)
+                                                       (GHC.Prim.-#
+                                                          (GHC.Prim.word2Int# r#1)
+                                                          56320#))
+                                                    65536#))) of wild4 {
+                                      GHC.Types.False -> $wloop_any (GHC.Prim.+# ww3 2#)
+                                      GHC.Types.True -> GHC.Types.True } } } } } }
+                       GHC.Types.True -> GHC.Types.False }
+                 } in
+                 $wloop_any ww1) -}
+27f418113944a50d9f4d1d4112b7d26d
+  $weval ::
+    GHC.IO.Handle.Types.Handle
+    -> GHC.Prim.MutVar#
+         (Control.Monad.Primitive.PrimState GHC.Types.IO)
+         (Data.HashTable.ST.Cuckoo.HashTable_
+            (Control.Monad.Primitive.PrimState GHC.Types.IO)
+            Data.Text.Internal.Text
+            GHC.Types.Double)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,U>, Inline: [0] -}
+5d0b2e3537ae3476bc5127f657e28a10
+  $wevalLine ::
+    GHC.Prim.MutVar#
+      (Control.Monad.Primitive.PrimState GHC.Types.IO)
+      (Data.HashTable.ST.Cuckoo.HashTable_
+         (Control.Monad.Primitive.PrimState GHC.Types.IO)
+         Data.Text.Internal.Text
+         GHC.Types.Double)
+    -> [Data.Text.Internal.Text]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 3, Strictness: <L,U><S,1*U><L,U>, Inline: [0] -}
+49a2653100e8750af7979c442f8dd500
+  $wgradRMSE ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Double#
+    -> GHC.Prim.Double#
+    -> Data.Vector.Storable.Vector GHC.Types.Double
+  {- Arity: 8, Strictness: <L,U><L,U><L,U><S,U><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Addr#)
+                   (ww2 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Addr#)
+                   (ww5 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww6 :: GHC.Prim.Double#)
+                   (ww7 :: GHC.Prim.Double#) ->
+                 case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ (Data.Vector.Storable.Vector GHC.Types.Double)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.<# ww3 0#) of wild {
+                           GHC.Types.False
+                           -> case GHC.Prim.tagToEnum#
+                                     @ GHC.Types.Bool
+                                     (GHC.Prim.># ww3 1152921504606846975#) of wild1 {
+                                GHC.Types.False
+                                -> let {
+                                     x :: GHC.Prim.Int# = GHC.Prim.*# ww3 8#
+                                   } in
+                                   case GHC.Prim.tagToEnum#
+                                          @ GHC.Types.Bool
+                                          (GHC.Prim.<# x 0#) of wild2 {
+                                     GHC.Types.False
+                                     -> case GHC.Prim.newPinnedByteArray#
+                                               @ GHC.Prim.RealWorld
+                                               x
+                                               s1 of ds { (#,#) ipv ipv1 ->
+                                        let {
+                                          ipv5 :: GHC.Prim.Addr#
+                                          = GHC.Prim.byteArrayContents#
+                                              ipv1
+                                                `cast`
+                                              (UnsafeCo representational (GHC.Prim.MutableByteArray#
+                                                                            GHC.Prim.RealWorld) GHC.Prim.ByteArray#)
+                                        } in
+                                        let {
+                                          ipv2 :: GHC.ForeignPtr.ForeignPtrContents
+                                          = GHC.ForeignPtr.PlainPtr ipv1
+                                        } in
+                                        let {
+                                          lvl49 :: GHC.Types.Double
+                                          = case Lib.gradRMSE3
+                                                   (Data.Vector.Storable.Vector
+                                                      @ GHC.Types.Double
+                                                      ww
+                                                      ww1
+                                                      ww2)
+                                                   (Data.Vector.Storable.Vector
+                                                      @ GHC.Types.Double
+                                                      ww3
+                                                      ww4
+                                                      ww5) of wild3 { GHC.Types.D# x1 ->
+                                            GHC.Types.D# (GHC.Prim.-## x1 ww6) }
+                                        } in
+                                        letrec {
+                                          $wfoldlM'_loop :: GHC.Types.SPEC
+                                                            -> GHC.Prim.Int#
+                                                            -> GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Types.Int #)
+                                            {- Arity: 4, Strictness: <S,1*U><L,U><S,U><S,U>,
+                                               Inline: [0] -}
+                                          = \ (w :: GHC.Types.SPEC)
+                                              (ww8 :: GHC.Prim.Int#)
+                                              (ww9 :: GHC.Prim.Int#)
+                                              (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                            case w of ds5 { DEFAULT ->
+                                            case GHC.Prim.tagToEnum#
+                                                   @ GHC.Types.Bool
+                                                   (GHC.Prim.>=# ww9 ww3) of wild3 {
+                                              GHC.Types.False
+                                              -> case GHC.Prim.readDoubleOffAddr#
+                                                        @ GHC.Prim.RealWorld
+                                                        ww4
+                                                        ww9
+                                                        GHC.Prim.realWorld# of ds2 { (#,#) ipv3 ipv4 ->
+                                                 case GHC.Prim.touch#
+                                                        @ 'GHC.Types.PtrRepLifted
+                                                        @ GHC.ForeignPtr.ForeignPtrContents
+                                                        ww5
+                                                        ipv3 of s' { DEFAULT ->
+                                                 case lvl49 of wild4 { GHC.Types.D# y ->
+                                                 case GHC.Prim./##
+                                                        (GHC.Prim.*## ipv4 y)
+                                                        ww7 of wild5 { DEFAULT ->
+                                                 case GHC.Prim.writeDoubleOffAddr#
+                                                        @ GHC.Prim.RealWorld
+                                                        (GHC.Prim.plusAddr#
+                                                           ipv5
+                                                           (GHC.Prim.*# ww8 8#))
+                                                        0#
+                                                        wild5
+                                                        w1 of s2 { DEFAULT ->
+                                                 case GHC.Prim.touch#
+                                                        @ 'GHC.Types.PtrRepLifted
+                                                        @ GHC.ForeignPtr.ForeignPtrContents
+                                                        ipv2
+                                                        s2 of s'1 { DEFAULT ->
+                                                 $wfoldlM'_loop
+                                                   GHC.Types.SPEC
+                                                   (GHC.Prim.+# ww8 1#)
+                                                   (GHC.Prim.+# ww9 1#)
+                                                   s'1 } } } } } }
+                                              GHC.Types.True -> (# w1, GHC.Types.I# ww8 #) } }
+                                        } in
+                                        case $wfoldlM'_loop
+                                               GHC.Types.SPEC
+                                               0#
+                                               0#
+                                               ipv of ds2 { (#,#) ipv6 ipv7 ->
+                                        case ipv7 of dt3 { GHC.Types.I# dt4 ->
+                                        (# ipv6,
+                                           Data.Vector.Storable.Vector
+                                             @ GHC.Types.Double
+                                             dt4
+                                             ipv5
+                                             ipv2 #) } } }
+                                     GHC.Types.True
+                                     -> case GHC.ForeignPtr.mallocPlainForeignPtrBytes2
+                                        ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                  Data.Vector.Storable.Vector GHC.Types.Double #)
+                                        of {} }
+                                GHC.Types.True
+                                -> case Lib.gradRMSE2 ww3
+                                   ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                             Data.Vector.Storable.Vector GHC.Types.Double #)
+                                   of {} }
+                           GHC.Types.True
+                           -> case Lib.gradRMSE1 ww3
+                              ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                        Data.Vector.Storable.Vector GHC.Types.Double #)
+                              of {} }) of ds1 { (#,#) ipv1 ipv2 ->
+                 ipv2 }) -}
+692bbd544c1a8c5dd11c84e8f9d4594d
+  $wloop ::
+    GHC.IO.Handle.Types.Handle
+    -> GHC.Prim.MutVar#
+         (Control.Monad.Primitive.PrimState GHC.Types.IO)
+         (Data.HashTable.ST.Cuckoo.HashTable_
+            (Control.Monad.Primitive.PrimState GHC.Types.IO)
+            Data.Text.Internal.Text
+            GHC.Types.Double)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,U>, Inline: [0] -}
+5ff361896c55c2ea6292e44ed0dcae6b
+  $wlvl ::
+    Data.Text.Internal.Text
+    -> GHC.Types.Double
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,1*U(U,U,U)><L,1*U(U)><S,U>,
+     Inline: [0] -}
+2f0bb37355eee379ba1076724c9f7275
+  $wnanCheck :: GHC.Prim.Double# -> GHC.Prim.Double#
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Base.eqString
+                        (GHC.Float.$w$sshowSignedFloat
+                           GHC.Float.$fShowDouble_$sshowFloat
+                           GHC.Show.shows22
+                           ww
+                           (GHC.Types.[] @ GHC.Types.Char))
+                        Lib.nanCheck2 of wild {
+                   GHC.Types.False
+                   -> case GHC.Base.eqString
+                             (GHC.Float.$w$sshowSignedFloat
+                                GHC.Float.$fShowDouble_$sshowFloat
+                                GHC.Show.shows22
+                                ww
+                                (GHC.Types.[] @ GHC.Types.Char))
+                             Lib.nanCheck1 of wild1 {
+                        GHC.Types.False -> ww GHC.Types.True -> 0.0## }
+                   GHC.Types.True -> 0.0## }) -}
+cedb2d5af3632eed9eccda48cb1e78ac
+  $wpreprocess ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int# -> GHC.Prim.Int# -> [Data.Text.Internal.Text]
+  {- Arity: 3, Strictness: <L,U><S,U><S,U>, Inline: [0] -}
+0e4ad7e6b8249a80fca457232cea3001
+  $wreadFromFile ::
+    GHC.Prim.MutVar#
+      (Control.Monad.Primitive.PrimState GHC.Types.IO)
+      (Data.HashTable.ST.Cuckoo.HashTable_
+         (Control.Monad.Primitive.PrimState GHC.Types.IO)
+         Data.Text.Internal.Text
+         GHC.Types.Double)
+    -> GHC.IO.Handle.Types.Handle
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,U>, Inline: [0] -}
+1961375b98697f0808a1f08179d48028
+  $wtrain ::
+    [(GHC.Types.Double, [Data.Text.Internal.Text])]
+    -> GHC.Prim.MutVar#
+         (Control.Monad.Primitive.PrimState GHC.Types.IO)
+         (Data.HashTable.ST.Cuckoo.HashTable_
+            (Control.Monad.Primitive.PrimState GHC.Types.IO)
+            Data.Text.Internal.Text
+            GHC.Types.Double)
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, Strictness: <S,1*U><L,U><L,U><S,U>, Inline: [0] -}
+15c8522af8cb2507bd9138677d1bae3a
+  $wupdateWeights ::
+    GHC.Prim.MutVar#
+      (Control.Monad.Primitive.PrimState GHC.Types.IO)
+      (Data.HashTable.ST.Cuckoo.HashTable_
+         (Control.Monad.Primitive.PrimState GHC.Types.IO)
+         Data.Text.Internal.Text
+         GHC.Types.Double)
+    -> [Data.Text.Internal.Text]
+    -> GHC.Prim.Double#
+    -> GHC.Prim.Double#
+    -> GHC.Prim.Double#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 6, Strictness: <L,U><S,1*U><L,U><L,U><L,U><L,U>,
+     Inline: [0] -}
+df12903975b060749549f9bfbd9c007a
+  type Probs =
+    Data.HashTable.IO.CuckooHashTable
+      Data.Text.Internal.Text GHC.Types.Double
+25f7d6ee0b49f3813cec4068b74d743c
+  chars :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "qwertyuiopasdfghjklzxcvbnm\\196\\153\\195\\179\\196\\133\\197\\155\\197\\130\\197\\188\\197\\186\\196\\135\\197\\132\t1234567890 "#) -}
+f567c2b10dfca19097c8223772667992
+  checkError ::
+    Lib.Probs
+    -> [Data.Text.Internal.Text]
+    -> GHC.Types.Double
+    -> GHC.Types.IO GHC.Types.Double
+  {- Arity: 4, Strictness: <S,1*U(U)><S,1*U><S,1*U(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.checkError1
+                  `cast`
+                (<Lib.Probs>_R
+                 ->_R <[Data.Text.Internal.Text]>_R
+                 ->_R <GHC.Types.Double>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R)) -}
+15d258f51ba6c46ae688c63b7e74305d
+  checkError1 ::
+    Lib.Probs
+    -> [Data.Text.Internal.Text]
+    -> GHC.Types.Double
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 4, Strictness: <S,1*U(U)><S,1*U><S,1*U(U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: Lib.Probs)
+                   (w1 :: [Data.Text.Internal.Text])
+                   (w2 :: GHC.Types.Double)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w `cast`
+                      (Data.HashTable.ST.Cuckoo.N:HashTable[0]
+                           <Control.Monad.Primitive.PrimState GHC.Types.IO>_N
+                           <Data.Text.Internal.Text>_R
+                           <GHC.Types.Double>_R) of ww { GHC.STRef.STRef ww1 ->
+                 case w2 of ww2 { GHC.Types.D# ww3 ->
+                 Lib.$wcheckError ww1 w1 ww3 w3 } }) -}
+9cc83f2bf6c3e32b01bbfdb056955aeb
+  counts :: GHC.Classes.Eq a => a -> [a] -> GHC.Types.Double
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(U),A)><L,U>,
+     Unfolding: (\ @ a ($dEq :: GHC.Classes.Eq a) (eta :: a) ->
+                 let {
+                   g :: a -> GHC.Types.Bool = GHC.Classes.== @ a $dEq eta
+                 } in
+                 letrec {
+                   $wgo :: [a] -> GHC.Prim.Int# -> GHC.Prim.Int#
+                     {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+                   = \ (w :: [a]) (ww :: GHC.Prim.Int#) ->
+                     case w of wild {
+                       [] -> ww
+                       : y ys
+                       -> case g y of wild1 {
+                            GHC.Types.False -> $wgo ys ww
+                            GHC.Types.True -> $wgo ys (GHC.Prim.+# ww 1#) } }
+                 } in
+                 \ (x :: [a]) ->
+                 case $wgo x 0# of ww { DEFAULT ->
+                 GHC.Types.D# (GHC.Prim.int2Double# ww) }) -}
+e1bb3a9f7890f3b969c7faf77365ee6b
+  counts1 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0#) -}
+fdda7eb3cbe2b6c0cca3b936d4c2e3ad
+  delta :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 1.0##) -}
+5c5117dd19ca513dc8fbd803ed9099a8
+  el :: GHC.Types.Char -> Data.Text.Internal.Text -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S(LSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Char) (w1 :: Data.Text.Internal.Text) ->
+                 case w1 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Lib.$wel w ww1 ww2 ww3 }) -}
+20fc1f6a070a70ffd416ae75638a6584
+  eval :: GHC.IO.Handle.Types.Handle -> Lib.Probs -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <S,1*U><S,1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.eval1
+                  `cast`
+                (<GHC.IO.Handle.Types.Handle>_R
+                 ->_R <Lib.Probs>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+b326687768f12f58721861cda46592e4
+  eval1 ::
+    GHC.IO.Handle.Types.Handle
+    -> Lib.Probs
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <S,1*U><S,1*U(U)><S,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.IO.Handle.Types.Handle)
+                   (w1 :: Lib.Probs)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1
+                        `cast`
+                      (Data.HashTable.ST.Cuckoo.N:HashTable[0]
+                           <Control.Monad.Primitive.PrimState GHC.Types.IO>_N
+                           <Data.Text.Internal.Text>_R
+                           <GHC.Types.Double>_R) of ww { GHC.STRef.STRef ww1 ->
+                 Lib.$weval w ww1 w2 }) -}
+85aff2396683d64f577e83cccab969c7
+  evalLine ::
+    Lib.Probs
+    -> [Data.Text.Internal.Text] -> GHC.Types.IO GHC.Types.Double
+  {- Arity: 3, Strictness: <S,1*U(U)><S,1*U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.evalLine1
+                  `cast`
+                (<Lib.Probs>_R
+                 ->_R <[Data.Text.Internal.Text]>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R)) -}
+59ededcf34d409c1e6057f629a2561ab
+  evalLine1 ::
+    Lib.Probs
+    -> [Data.Text.Internal.Text]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 3, Strictness: <S,1*U(U)><S,1*U><L,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Lib.Probs)
+                   (w1 :: [Data.Text.Internal.Text])
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w `cast`
+                      (Data.HashTable.ST.Cuckoo.N:HashTable[0]
+                           <Control.Monad.Primitive.PrimState GHC.Types.IO>_N
+                           <Data.Text.Internal.Text>_R
+                           <GHC.Types.Double>_R) of ww { GHC.STRef.STRef ww1 ->
+                 Lib.$wevalLine ww1 w1 w2 }) -}
+a1d4e8ecd5651af9b3ec2f5d236ce63b
+  gradRMSE ::
+    Data.Vector.Storable.Vector GHC.Types.Double
+    -> Data.Vector.Storable.Vector GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> Data.Vector.Storable.Vector GHC.Types.Double
+  {- Arity: 4,
+     Strictness: <S,1*U(U,U,U)><S(SLL),1*U(U,U,U)><S,1*U(U)><S,1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: Data.Vector.Storable.Vector GHC.Types.Double)
+                   (w1 :: Data.Vector.Storable.Vector GHC.Types.Double)
+                   (w2 :: GHC.Types.Double)
+                   (w3 :: GHC.Types.Double) ->
+                 case w of ww { Data.Vector.Storable.Vector ww1 ww2 ww3 ->
+                 case w1 of ww4 { Data.Vector.Storable.Vector ww5 ww6 ww7 ->
+                 case w2 of ww8 { GHC.Types.D# ww9 ->
+                 case w3 of ww10 { GHC.Types.D# ww11 ->
+                 Lib.$wgradRMSE ww1 ww2 ww3 ww5 ww6 ww7 ww9 ww11 } } } }) -}
+c4bb99bac07ec3499b39d5c6bb4ca8c0
+  gradRMSE1 ::
+    GHC.Prim.Int#
+    -> GHC.ST.ST
+         GHC.Prim.RealWorld
+         (Data.Vector.Storable.Mutable.MVector
+            (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+            GHC.Types.Double)
+  {- Arity: 1, Strictness: <L,U>x -}
+c0a0d6422fc1227a931d8537c3361860
+  gradRMSE2 ::
+    GHC.Prim.Int#
+    -> GHC.ST.ST
+         GHC.Prim.RealWorld
+         (Data.Vector.Storable.Mutable.MVector
+            (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+            GHC.Types.Double)
+  {- Arity: 1, Strictness: <L,U>x -}
+0ea53c4c4d7ffc0f63cd5fa26c5abce1
+  gradRMSE3 ::
+    Data.Vector.Storable.Vector GHC.Types.Double
+    -> Data.Vector.Storable.Vector GHC.Types.Double -> GHC.Types.Double
+  {- Unfolding: (Internal.Numeric.udot
+                   @ GHC.Types.Double
+                   Internal.Numeric.$fProductDouble) -}
+c9b5a6e5de05cb022789076026e7da6a
+  linear ::
+    Data.Vector.Storable.Vector GHC.Types.Double
+    -> Data.Vector.Storable.Vector GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: Data.Vector.Storable.Vector GHC.Types.Double)
+                   (eta1 :: Data.Vector.Storable.Vector GHC.Types.Double) ->
+                 Internal.Numeric.udot
+                   @ GHC.Types.Double
+                   Internal.Numeric.$fProductDouble
+                   eta
+                   eta1) -}
+2389efbbb50209e74e05fa2c7810479c
+  loadCorpus ::
+    GHC.Base.String
+    -> GHC.Types.IO [(GHC.Types.Double, [Data.Text.Internal.Text])]
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.loadCorpus1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <[(GHC.Types.Double, [Data.Text.Internal.Text])]>_R)) -}
+a4adcb29c5da7693aa6339ffc29a05b1
+  loadCorpus1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [(GHC.Types.Double, [Data.Text.Internal.Text])] #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (filename :: GHC.Base.String)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case filename of filename1 { DEFAULT ->
+                 case GHC.Prim.getMaskingState# eta of ds { (#,#) ipv ipv1 ->
+                 case ipv1 of ds1 {
+                   DEFAULT
+                   -> case GHC.IO.Handle.FD.openFile1
+                             filename1
+                             GHC.IO.IOMode.ReadMode
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ [(GHC.Types.Double, [Data.Text.Internal.Text])]
+                             @ GHC.Exception.SomeException
+                             (GHC.Magic.lazy
+                                @ (GHC.Types.IO [(GHC.Types.Double, [Data.Text.Internal.Text])])
+                                (GHC.Prim.maskAsyncExceptions#
+                                   @ [(GHC.Types.Double, [Data.Text.Internal.Text])]
+                                   (Lib.loadCorpus2
+                                      (GHC.Types.[] @ (GHC.Types.Double, [Data.Text.Internal.Text]))
+                                      ipv3))
+                                  `cast`
+                                (Sym (GHC.Types.N:IO[0]
+                                          <[(GHC.Types.Double, [Data.Text.Internal.Text])]>_R)))
+                               `cast`
+                             (GHC.Types.N:IO[0]
+                                  <[(GHC.Types.Double, [Data.Text.Internal.Text])]>_R)
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.IO.Handle.hClose1 ipv3 eta1 of ds3 { (#,#) ipv4 ipv5 ->
+                              GHC.Prim.raiseIO#
+                                @ GHC.Exception.SomeException
+                                @ [(GHC.Types.Double, [Data.Text.Internal.Text])]
+                                e1
+                                ipv4 })
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case GHC.IO.Handle.hClose1 ipv3 ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                      (# ipv6, ipv5 #) } } }
+                   0#
+                   -> GHC.Prim.maskAsyncExceptions#
+                        @ [(GHC.Types.Double, [Data.Text.Internal.Text])]
+                        (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.IO.Handle.FD.openFile1
+                                filename1
+                                GHC.IO.IOMode.ReadMode
+                                eta1 of ds2 { (#,#) ipv2 ipv3 ->
+                         case GHC.Prim.catch#
+                                @ [(GHC.Types.Double, [Data.Text.Internal.Text])]
+                                @ GHC.Exception.SomeException
+                                (GHC.Magic.lazy
+                                   @ (GHC.Types.IO [(GHC.Types.Double, [Data.Text.Internal.Text])])
+                                   (GHC.Prim.unmaskAsyncExceptions#
+                                      @ [(GHC.Types.Double, [Data.Text.Internal.Text])]
+                                      (Lib.loadCorpus2
+                                         (GHC.Types.[]
+                                            @ (GHC.Types.Double, [Data.Text.Internal.Text]))
+                                         ipv3))
+                                     `cast`
+                                   (Sym (GHC.Types.N:IO[0]
+                                             <[(GHC.Types.Double, [Data.Text.Internal.Text])]>_R)))
+                                  `cast`
+                                (GHC.Types.N:IO[0]
+                                     <[(GHC.Types.Double, [Data.Text.Internal.Text])]>_R)
+                                (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case GHC.IO.Handle.hClose1 ipv3 eta2 of ds3 { (#,#) ipv4 ipv5 ->
+                                 GHC.Prim.raiseIO#
+                                   @ GHC.Exception.SomeException
+                                   @ [(GHC.Types.Double, [Data.Text.Internal.Text])]
+                                   e1
+                                   ipv4 })
+                                ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                         case GHC.IO.Handle.hClose1 ipv3 ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                         (# ipv6, ipv5 #) } } })
+                        ipv
+                   1#
+                   -> case GHC.IO.Handle.FD.openFile1
+                             filename1
+                             GHC.IO.IOMode.ReadMode
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ [(GHC.Types.Double, [Data.Text.Internal.Text])]
+                             @ GHC.Exception.SomeException
+                             (GHC.Magic.lazy
+                                @ (GHC.Types.IO [(GHC.Types.Double, [Data.Text.Internal.Text])])
+                                (GHC.Prim.maskUninterruptible#
+                                   @ [(GHC.Types.Double, [Data.Text.Internal.Text])]
+                                   (Lib.loadCorpus2
+                                      (GHC.Types.[] @ (GHC.Types.Double, [Data.Text.Internal.Text]))
+                                      ipv3))
+                                  `cast`
+                                (Sym (GHC.Types.N:IO[0]
+                                          <[(GHC.Types.Double, [Data.Text.Internal.Text])]>_R)))
+                               `cast`
+                             (GHC.Types.N:IO[0]
+                                  <[(GHC.Types.Double, [Data.Text.Internal.Text])]>_R)
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.IO.Handle.hClose1 ipv3 eta1 of ds3 { (#,#) ipv4 ipv5 ->
+                              GHC.Prim.raiseIO#
+                                @ GHC.Exception.SomeException
+                                @ [(GHC.Types.Double, [Data.Text.Internal.Text])]
+                                e1
+                                ipv4 })
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case GHC.IO.Handle.hClose1 ipv3 ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                      (# ipv6, ipv5 #) } } } } } }) -}
+452a6817ccc2e4941047d8af86960de6
+  loadCorpus2 ::
+    [(GHC.Types.Double, [Data.Text.Internal.Text])]
+    -> GHC.IO.Handle.Types.Handle
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [(GHC.Types.Double, [Data.Text.Internal.Text])] #)
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,U> -}
+7befae913c4a582b368703f7a07074d3
+  nanCheck :: GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 1, Strictness: <S(S),1*U(U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 case Lib.$wnanCheck ww1 of ww2 { DEFAULT ->
+                 GHC.Types.D# ww2 } }) -}
+34ac49e11e12842034042f6f2d009e67
+  nanCheck1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Infinity"#) -}
+713f810f20f794615f73059f843f7b52
+  nanCheck2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "NaN"#) -}
+3b63b3b6095193d243ecd8864a0ec414
+  preprocess :: Data.Text.Internal.Text -> [Data.Text.Internal.Text]
+  {- Arity: 1, Strictness: <S(LSS),1*U(U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.Text.Internal.Text) ->
+                 GHC.Base.build
+                   @ Data.Text.Internal.Text
+                   (\ @ b1
+                      (c :: Data.Text.Internal.Text -> b1 -> b1)[OneShot]
+                      (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ Data.Text.Internal.Text
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ Data.Text.Internal.Text
+                         @ b1
+                         @ Data.Text.Internal.Text
+                         c
+                         Lib.preprocess2)
+                      n
+                      (Lib.preprocess1 x))) -}
+98428c6aefc0479711aa037cc96898a4
+  preprocess1 :: Data.Text.Internal.Text -> [Data.Text.Internal.Text]
+  {- Arity: 1, Strictness: <S(LSS),1*U(U,U,U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Lib.$wpreprocess ww1 ww2 ww3 }) -}
+7a00e8d5e4a9e9314b17f4f8937836c9
+  preprocess2 :: Data.Text.Internal.Text -> Data.Text.Internal.Text
+  {- Arity: 1, Unfolding: (Data.Text.take Lib.preprocess3) -}
+e3284a4370b68b1bacc23ce193060357
+  preprocess3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 20#) -}
+c9ac2103af4763ed55585b8ef8335472
+  readProbs :: GHC.Base.String -> GHC.Types.IO Lib.Probs
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.readProbs1
+                  `cast`
+                (<GHC.Base.String>_R ->_R Sym (GHC.Types.N:IO[0] <Lib.Probs>_R)) -}
+3f5f7669fbb2ea871fa19c69c2e3ca71
+  readProbs1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Lib.Probs #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (filename :: GHC.Base.String)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case filename of filename1 { DEFAULT ->
+                 case Data.HashTable.Internal.Utils.$wnextBestPrime
+                        Lib.readProbs2 of ww { DEFAULT ->
+                 case Data.HashTable.ST.Cuckoo.$wnewSizedReal
+                        @ GHC.Prim.RealWorld
+                        @ Data.Text.Internal.Text
+                        @ GHC.Types.Double
+                        ww
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.newMutVar#
+                        @ (Data.HashTable.ST.Cuckoo.HashTable_
+                             GHC.Prim.RealWorld Data.Text.Internal.Text GHC.Types.Double)
+                        @ GHC.Prim.RealWorld
+                        ipv1
+                        ipv of ds { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.getMaskingState# ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                 case ipv5 of ds3 {
+                   DEFAULT
+                   -> case GHC.IO.Handle.FD.openFile1
+                             filename1
+                             GHC.IO.IOMode.ReadMode
+                             ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Magic.lazy
+                                @ (GHC.Types.IO ())
+                                (GHC.Prim.maskAsyncExceptions#
+                                   @ ()
+                                   (\ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    Lib.$wreadFromFile
+                                      ipv3
+                                        `cast`
+                                      (GHC.Prim.MutVar#
+                                         (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                         (Data.HashTable.ST.Cuckoo.HashTable_
+                                            (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                            <Data.Text.Internal.Text>_R
+                                            <GHC.Types.Double>_R)_R)_R
+                                      ipv7
+                                      w))
+                                  `cast`
+                                (Sym (GHC.Types.N:IO[0] <()>_R)))
+                               `cast`
+                             (GHC.Types.N:IO[0] <()>_R)
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.IO.Handle.hClose1 ipv7 eta1 of ds5 { (#,#) ipv8 ipv9 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ipv8 })
+                             ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                      case GHC.IO.Handle.hClose1 ipv7 ipv8 of ds6 { (#,#) ipv10 ipv11 ->
+                      (# ipv10,
+                         (GHC.STRef.STRef
+                            @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                            @ (Data.HashTable.ST.Cuckoo.HashTable_
+                                 (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                                 Data.Text.Internal.Text
+                                 GHC.Types.Double)
+                            ipv3
+                              `cast`
+                            (GHC.Prim.MutVar#
+                               (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                               (Data.HashTable.ST.Cuckoo.HashTable_
+                                  (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                  <Data.Text.Internal.Text>_R
+                                  <GHC.Types.Double>_R)_R)_R)
+                           `cast`
+                         (Sym (Data.HashTable.ST.Cuckoo.N:HashTable[0]
+                                   <Control.Monad.Primitive.PrimState GHC.Types.IO>_N
+                                   <Data.Text.Internal.Text>_R
+                                   <GHC.Types.Double>_R)) #) } } }
+                   0#
+                   -> case GHC.Prim.maskAsyncExceptions#
+                             @ ()
+                             (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.IO.Handle.FD.openFile1
+                                     filename1
+                                     GHC.IO.IOMode.ReadMode
+                                     eta1 of ds4 { (#,#) ipv6 ipv7 ->
+                              case GHC.Prim.catch#
+                                     @ ()
+                                     @ GHC.Exception.SomeException
+                                     (GHC.Magic.lazy
+                                        @ (GHC.Types.IO ())
+                                        (GHC.Prim.unmaskAsyncExceptions#
+                                           @ ()
+                                           (\ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                            Lib.$wreadFromFile
+                                              ipv3
+                                                `cast`
+                                              (GHC.Prim.MutVar#
+                                                 (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                                 (Data.HashTable.ST.Cuckoo.HashTable_
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                                    <Data.Text.Internal.Text>_R
+                                                    <GHC.Types.Double>_R)_R)_R
+                                              ipv7
+                                              w))
+                                          `cast`
+                                        (Sym (GHC.Types.N:IO[0] <()>_R)))
+                                       `cast`
+                                     (GHC.Types.N:IO[0] <()>_R)
+                                     (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                        (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                      case GHC.IO.Handle.hClose1
+                                             ipv7
+                                             eta2 of ds5 { (#,#) ipv8 ipv9 ->
+                                      GHC.Prim.raiseIO#
+                                        @ GHC.Exception.SomeException
+                                        @ ()
+                                        e1
+                                        ipv8 })
+                                     ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                              case GHC.IO.Handle.hClose1 ipv7 ipv8 of ds6 { (#,#) ipv10 ipv11 ->
+                              (# ipv10, ipv9 #) } } })
+                             ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                      (# ipv6,
+                         (GHC.STRef.STRef
+                            @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                            @ (Data.HashTable.ST.Cuckoo.HashTable_
+                                 (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                                 Data.Text.Internal.Text
+                                 GHC.Types.Double)
+                            ipv3
+                              `cast`
+                            (GHC.Prim.MutVar#
+                               (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                               (Data.HashTable.ST.Cuckoo.HashTable_
+                                  (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                  <Data.Text.Internal.Text>_R
+                                  <GHC.Types.Double>_R)_R)_R)
+                           `cast`
+                         (Sym (Data.HashTable.ST.Cuckoo.N:HashTable[0]
+                                   <Control.Monad.Primitive.PrimState GHC.Types.IO>_N
+                                   <Data.Text.Internal.Text>_R
+                                   <GHC.Types.Double>_R)) #) }
+                   1#
+                   -> case GHC.IO.Handle.FD.openFile1
+                             filename1
+                             GHC.IO.IOMode.ReadMode
+                             ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Magic.lazy
+                                @ (GHC.Types.IO ())
+                                (GHC.Prim.maskUninterruptible#
+                                   @ ()
+                                   (\ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    Lib.$wreadFromFile
+                                      ipv3
+                                        `cast`
+                                      (GHC.Prim.MutVar#
+                                         (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                         (Data.HashTable.ST.Cuckoo.HashTable_
+                                            (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                            <Data.Text.Internal.Text>_R
+                                            <GHC.Types.Double>_R)_R)_R
+                                      ipv7
+                                      w))
+                                  `cast`
+                                (Sym (GHC.Types.N:IO[0] <()>_R)))
+                               `cast`
+                             (GHC.Types.N:IO[0] <()>_R)
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.IO.Handle.hClose1 ipv7 eta1 of ds5 { (#,#) ipv8 ipv9 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ipv8 })
+                             ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                      case GHC.IO.Handle.hClose1 ipv7 ipv8 of ds6 { (#,#) ipv10 ipv11 ->
+                      (# ipv10,
+                         (GHC.STRef.STRef
+                            @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                            @ (Data.HashTable.ST.Cuckoo.HashTable_
+                                 (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                                 Data.Text.Internal.Text
+                                 GHC.Types.Double)
+                            ipv3
+                              `cast`
+                            (GHC.Prim.MutVar#
+                               (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                               (Data.HashTable.ST.Cuckoo.HashTable_
+                                  (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                  <Data.Text.Internal.Text>_R
+                                  <GHC.Types.Double>_R)_R)_R)
+                           `cast`
+                         (Sym (Data.HashTable.ST.Cuckoo.N:HashTable[0]
+                                   <Control.Monad.Primitive.PrimState GHC.Types.IO>_N
+                                   <Data.Text.Internal.Text>_R
+                                   <GHC.Types.Double>_R)) #) } } } } } } } } }) -}
+a373cfe721f6c16998b6382de645e00e
+  readProbs2 :: GHC.Types.Int
+  {- Unfolding: (case Data.HashTable.Internal.Utils.numElemsInCacheLine of wild1 { GHC.Types.I# y ->
+                 case GHC.Real.$w$cdiv
+                        (GHC.Prim.-# (GHC.Prim.+# 2500000# y) 1#)
+                        y of ww4 { DEFAULT ->
+                 let {
+                   wild2 :: GHC.Prim.Double#
+                   = GHC.Prim./## (GHC.Prim.int2Double# ww4) 0.88##
+                 } in
+                 let {
+                   n :: GHC.Prim.Int# = GHC.Prim.double2Int# wild2
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<## (GHC.Prim.int2Double# n) wild2) of wild4 {
+                   GHC.Types.False -> GHC.Types.I# n
+                   GHC.Types.True -> GHC.Types.I# (GHC.Prim.+# n 1#) } } }) -}
+403c3348dc21ce646b6fbabf4b9b0287
+  readWords :: GHC.IO.Handle.Types.Handle -> GHC.Types.IO Lib.Probs
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.readWords1
+                  `cast`
+                (<GHC.IO.Handle.Types.Handle>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <Lib.Probs>_R)) -}
+07feeda00081a945d22370ad74cb665f
+  readWords1 ::
+    GHC.IO.Handle.Types.Handle
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Lib.Probs #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (handl :: GHC.IO.Handle.Types.Handle)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case handl of handl1 { DEFAULT ->
+                 case Data.HashTable.Internal.Utils.$wnextBestPrime
+                        Lib.readProbs2 of ww { DEFAULT ->
+                 case Data.HashTable.ST.Cuckoo.$wnewSizedReal
+                        @ GHC.Prim.RealWorld
+                        @ Data.Text.Internal.Text
+                        @ GHC.Types.Double
+                        ww
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.newMutVar#
+                        @ (Data.HashTable.ST.Cuckoo.HashTable_
+                             GHC.Prim.RealWorld Data.Text.Internal.Text GHC.Types.Double)
+                        @ GHC.Prim.RealWorld
+                        ipv1
+                        ipv of ds { (#,#) ipv2 ipv3 ->
+                 case Lib.$wloop
+                        handl1
+                        ipv3
+                          `cast`
+                        (GHC.Prim.MutVar#
+                           (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                           (Data.HashTable.ST.Cuckoo.HashTable_
+                              (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                              <Data.Text.Internal.Text>_R
+                              <GHC.Types.Double>_R)_R)_R
+                        ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ (Data.HashTable.ST.Cuckoo.HashTable_
+                             GHC.Prim.RealWorld Data.Text.Internal.Text GHC.Types.Double)
+                        ipv3
+                        ipv4 of ds3 { (#,#) ipv6 ipv7 ->
+                 case ipv7 of ww1 { Data.HashTable.ST.Cuckoo.HashTable ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ->
+                 case Data.HashTable.ST.Cuckoo.$winsert'
+                        @ Data.Text.Internal.Text
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Double
+                        Data.Text.$fEqText
+                        Data.Hashable.Class.$fHashableText0
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6
+                        ww7
+                        ww8
+                        ww9
+                        Lib.readWords3
+                        Lib.readWords2
+                        ipv6 of ds4 { (#,#) ipv8 ipv9 ->
+                 case GHC.Prim.writeMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ (Data.HashTable.ST.Cuckoo.HashTable_
+                             GHC.Prim.RealWorld Data.Text.Internal.Text GHC.Types.Double)
+                        ipv3
+                        ipv9
+                        ipv8 of s2# { DEFAULT ->
+                 (# s2#,
+                    (GHC.STRef.STRef
+                       @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                       @ (Data.HashTable.ST.Cuckoo.HashTable_
+                            (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                            Data.Text.Internal.Text
+                            GHC.Types.Double)
+                       ipv3
+                         `cast`
+                       (GHC.Prim.MutVar#
+                          (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                          (Data.HashTable.ST.Cuckoo.HashTable_
+                             (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                             <Data.Text.Internal.Text>_R
+                             <GHC.Types.Double>_R)_R)_R)
+                      `cast`
+                    (Sym (Data.HashTable.ST.Cuckoo.N:HashTable[0]
+                              <Control.Monad.Primitive.PrimState GHC.Types.IO>_N
+                              <Data.Text.Internal.Text>_R
+                              <GHC.Types.Double>_R)) #) } } } } } } } } }) -}
+7970e3f746ae7f08c5b4abe20133ebcb
+  readWords2 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.D# 1900.0##) -}
+42257ed86a5e3b1c84a43196fe859230
+  readWords3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "<bias>"#) -}
+4abd264627769afb9ecd15887866bd49
+  rmse ::
+    Data.Vector.Storable.Vector GHC.Types.Double
+    -> Data.Vector.Storable.Vector GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+  {- Arity: 3,
+     Strictness: <S,1*U(U,U,U)><S,1*U(U,U,U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (3, True, False)
+                (\ (weights :: Data.Vector.Storable.Vector GHC.Types.Double)
+                   (inp :: Data.Vector.Storable.Vector GHC.Types.Double)
+                   (ex :: GHC.Types.Double) ->
+                 case weights of weights1 { Data.Vector.Storable.Vector ipv ipv1 ipv2 ->
+                 case inp of inp1 { Data.Vector.Storable.Vector ipv3 ipv4 ipv5 ->
+                 case ex of ex1 { GHC.Types.D# ipv6 ->
+                 case Internal.Numeric.udot
+                        @ GHC.Types.Double
+                        Internal.Numeric.$fProductDouble
+                        weights1
+                        inp1 of prob { GHC.Types.D# ipv7 ->
+                 let {
+                   x :: GHC.Prim.Double# = GHC.Prim.-## ipv7 ipv6
+                 } in
+                 GHC.Types.D# (GHC.Prim.*## x x) } } } }) -}
+73737cac96dee28b49c17884a1b8025c
+  saveProbs :: Lib.Probs -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.saveProbs1
+                  `cast`
+                (<Lib.Probs>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+1c2f5d45e7591dc07575253eaad17a1d
+  saveProbs1 ::
+    Lib.Probs
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (dic :: Lib.Probs)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case dic
+                        `cast`
+                      (Data.HashTable.ST.Cuckoo.N:HashTable[0]
+                           <Control.Monad.Primitive.PrimState GHC.Types.IO>_N
+                           <Data.Text.Internal.Text>_R
+                           <GHC.Types.Double>_R) of nt { GHC.STRef.STRef ipv ->
+                 Data.HashTable.IO.$w$smapM_
+                   @ Data.Text.Internal.Text
+                   @ GHC.Types.Double
+                   @ ()
+                   Lib.saveProbs2
+                     `cast`
+                   (<(Data.Text.Internal.Text, GHC.Types.Double)>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   ipv
+                   eta }) -}
+c1a23ea5082503d3b19cd6ea9d17e84f
+  saveProbs2 ::
+    (Data.Text.Internal.Text, GHC.Types.Double)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U(1*U(U,U,U),1*U(U))><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (Data.Text.Internal.Text, GHC.Types.Double))
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { (,) ww1 ww2 -> Lib.$wlvl ww1 ww2 w1 }) -}
+030b0c7ca67894c24630f7930c1315bc
+  someFunc :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+451f05b835b7dc2b35ef6f38a353d935
+  someFunc1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Lib.someFunc2
+                   GHC.Types.True
+                   eta) -}
+bfe019cb407980ac01f5106c93f1128f
+  someFunc2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "someFunc"#) -}
+f7c6eb93b3dbb9fe9c4be32dc9e22ba5
+  st :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 10.0##) -}
+bf1cef333d64d501161fa21c20526484
+  train ::
+    [(GHC.Types.Double, [Data.Text.Internal.Text])]
+    -> Lib.Probs -> GHC.Types.Int -> GHC.Types.IO ()
+  {- Arity: 4, Strictness: <S,1*U><S,1*U(U)><S,1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.train1
+                  `cast`
+                (<[(GHC.Types.Double, [Data.Text.Internal.Text])]>_R
+                 ->_R <Lib.Probs>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+3394de591c8de88f23758d620675e7aa
+  train1 ::
+    [(GHC.Types.Double, [Data.Text.Internal.Text])]
+    -> Lib.Probs
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, Strictness: <S,1*U><S,1*U(U)><S,1*U(U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: [(GHC.Types.Double, [Data.Text.Internal.Text])])
+                   (w1 :: Lib.Probs)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1
+                        `cast`
+                      (Data.HashTable.ST.Cuckoo.N:HashTable[0]
+                           <Control.Monad.Primitive.PrimState GHC.Types.IO>_N
+                           <Data.Text.Internal.Text>_R
+                           <GHC.Types.Double>_R) of ww { GHC.STRef.STRef ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 Lib.$wtrain w ww1 ww3 w3 } }) -}
+8a37bf06efd562d3131835897b58240d
+  updateWeights ::
+    Lib.Probs
+    -> [Data.Text.Internal.Text]
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.IO GHC.Types.Double
+  {- Arity: 6,
+     Strictness: <S,1*U(U)><S,1*U><S,1*U(U)><S,1*U(U)><S,1*U(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.updateWeights1
+                  `cast`
+                (<Lib.Probs>_R
+                 ->_R <[Data.Text.Internal.Text]>_R
+                 ->_R <GHC.Types.Double>_R
+                 ->_R <GHC.Types.Double>_R
+                 ->_R <GHC.Types.Double>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R)) -}
+d5cc959ffff478c8def9d30512c2fc80
+  updateWeights1 ::
+    Lib.Probs
+    -> [Data.Text.Internal.Text]
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 6,
+     Strictness: <S,1*U(U)><S,1*U><S,1*U(U)><S,1*U(U)><S,1*U(U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ (w :: Lib.Probs)
+                   (w1 :: [Data.Text.Internal.Text])
+                   (w2 :: GHC.Types.Double)
+                   (w3 :: GHC.Types.Double)
+                   (w4 :: GHC.Types.Double)
+                   (w5 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w `cast`
+                      (Data.HashTable.ST.Cuckoo.N:HashTable[0]
+                           <Control.Monad.Primitive.PrimState GHC.Types.IO>_N
+                           <Data.Text.Internal.Text>_R
+                           <GHC.Types.Double>_R) of ww { GHC.STRef.STRef ww1 ->
+                 case w2 of ww2 { GHC.Types.D# ww3 ->
+                 case w3 of ww4 { GHC.Types.D# ww5 ->
+                 case w4 of ww6 { GHC.Types.D# ww7 ->
+                 Lib.$wupdateWeights ww1 w1 ww3 ww5 ww7 w5 } } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

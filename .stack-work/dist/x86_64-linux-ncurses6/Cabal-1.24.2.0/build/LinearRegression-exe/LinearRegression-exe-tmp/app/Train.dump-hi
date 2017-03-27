@@ -1,0 +1,126 @@
+
+==================== FINAL INTERFACE ====================
+2017-03-25 09:25:59.574439569 UTC
+
+interface main@main:Main 8002
+  interface hash: 2fa506789dce36f72645c971784101a9
+  ABI hash: 6eb4bc4d40956fcc209c6e4afa900519
+  export-list hash: 0e793d00cc99a194050c0405e200d5b6
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d14c819be0a708834d368707b7d77ef7
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: LinearRegression-0.1.0.0@LinearRegression-0.1.0.0-Hh3n6xV11XeLxMGLEKIE24
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4
+                      hashtables-1.2.1.0@hashtables-1.2.1.0-Gn8SuLgl5kj6IL9Wq6eBAx
+                      hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O
+                      integer-gmp-1.0.0.1
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      process-1.4.3.0@process-1.4.3.0
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      split-0.2.3.1@split-0.2.3.1-FWyXC6nhV0H3AfM8IzrEFk
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unix-2.7.2.1@unix-2.7.2.1
+                      vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4:Data.Hashable.Generic
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.CG
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Element
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Util
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Vector
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Numeric.Matrix
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Numeric.Vector
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Compose base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Devel
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Matrix
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Modular
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-Jq6rGX8YpZCYBXqZ1BG1O:Internal.Numeric
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed.Base
+import  -/  LinearRegression-0.1.0.0@LinearRegression-0.1.0.0-Hh3n6xV11XeLxMGLEKIE24:Lib d4c637852d9c51031212e75ba3d8599d
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.IO.IOMode 2f5782f93b12a0d860d6d661b9fb405c
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.Environment 08cb808e8e6a7821e6f8cfa76a977431
+import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
+import  -/  base-4.9.1.0:Text.Read 75c59863e882ebaec4532e9465e2ee9b
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+d9c0dee8a685c5ed422401aaa63f23bf
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+01d62c2c484918d4b5d94b688c90c90e
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+129a1a814fa667791781f32a098e848d
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
